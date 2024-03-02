@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+  </head>
+
+  <body>
+    <div class="game-container">
+      <h1>Rock Paper Scissors</h1>
+
+      <section class="options-section">
+        <button class="js-rock-button">
+          <img src="pictures/rock-emoji.png" alt=""
+          class="move-icon">
+        </button>
+  
+        <button class="js-paper-button">
+          <img src="pictures/paper-emoji.png" alt="" class="move-icon">
+        </button>
+  
+        <button class="js-scissors-button">
+          <img src="pictures/scissors-emoji.png" alt="" class="move-icon">
+        </button>
+      </section>
+      
+      <section class="result-section">
+        <div class="result-container">
+          <p class="js-result result"></p>
+          <p class="js-moves moves"></p>
+        </div>
+        <div class="refresh-container">
+          <svg class="refresh-icon js-refresh-icon" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_2)">
+              <path d="M95.9958 36.6337L96.9164 36.243L96.9163 36.2429L95.9958 36.6337ZM97 39L98.4083 27.5392L87.7788 32.05L97 39ZM3.00552 38.9849L2.06634 38.6415L2.06629 38.6416L3.00552 38.9849ZM95.9895 36.6189L95.069 37.0096L95.0691 37.0097L95.9895 36.6189ZM3.93923 39.3433L3.94476 39.3282L2.06629 38.6416L2.06077 38.6567L3.93923 39.3433ZM96.9163 36.2429L96.91 36.228L95.0691 37.0097L95.0753 37.0245L96.9163 36.2429ZM3.9447 39.3283C19.2091 -2.41623 77.7013 -3.9046 95.069 37.0096L96.91 36.2281C78.8334 -6.35605 17.9538 -4.80694 2.06634 38.6415L3.9447 39.3283Z" fill="white"/>
+              <path d="M3.94449 63.2344L3.0234 63.6237L3.0234 63.6237L3.94449 63.2344ZM3.00001 61L1.57562 72.4588L12.2114 67.963L3.00001 61ZM96.0613 60.6553C80.7279 102.412 22.1854 103.818 4.86558 62.845L3.0234 63.6237C21.0496 106.268 81.9799 104.805 97.9387 61.3447L96.0613 60.6553Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_2">
+                <rect width="100" height="100" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="js-refresh-paragraph refresh-paragraph">Auto-Play on</p>
+        </div>
+      </section>
+      
+      <section class="score-section">
+        <p class="js-score score"></p>
+
+        <button class="reset-button js-reset-button">
+          Reset Score
+        </button>
+
+        <button class="auto-play js-auto-button">Auto-Play</button>
+
+        <p class="js-reset-paragraph reset-paragraph">Are you sure you want to reset the score? 
+          <button class="auto-play js-auto-yes">Yes</button> 
+          <button class="auto-play js-auto-no">No</button>
+        </p>
+      </section>
+      
+    </div>
+    
+
+    <script src="scripts/rock-paper-scissors.js"></script>
+  </body>
+
+</html>
